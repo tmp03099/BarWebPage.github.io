@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 25px;
+}
+
+.list-drink{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: blanchedalmond;
+    margin-top: 30px;
+}
+
+.list-food{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: blanchedalmond;
+    margin-top: 30px;
+}
+
+.menu-item-price{
+    font-size: large;
+}
+
+.menu-drink-header h3{
+    color: #dce378;
+}
+
+.menu-item p{
+    font-family: 'Itim', cursive;
+}
+
+@media (min-width:550px){
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        margin-top: 25px;
+    }
+
+    .list-drink{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        color: blanchedalmond;
+        margin-top: 30px;
+    }
+    
+    .list-food{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        color: blanchedalmond;
+        margin-top: 30px;
+    }
+
+
+}
+    
+
+
+
+@media (min-width:750px){
+
+    .list-drink{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        color: blanchedalmond;
+        margin-top: 30px;
+    }
+
+    .list-food{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        color: blanchedalmond;
+        margin-top: 30px;
+    }
+}
+
+
+
+

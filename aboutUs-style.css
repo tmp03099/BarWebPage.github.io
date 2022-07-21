@@ -1,0 +1,55 @@
+/* Mobile first */
+.logo-img{
+    display: flex;
+    width:150px;
+    height:150px;
+}
+
+.about-us{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us h3{
+    font-size: 4em;
+    text-shadow: 3px 6px 5px #00b5f7;
+}
+
+.footer{
+    margin-top: 100px;
+}
+
+@media (min-width: 750px){
+
+    .logo-img{
+        display: flex;
+        width:300px;
+        height:300px;
+    }
+
+    .name{
+        justify-content: left;
+    }
+
+    .about-us{
+        justify-content: center;
+    }
+    
+    .about-us h3{
+        font-size: 5em;
+    }
+    
+    .main h3{
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width:850px){
+
+    .about-us h3{
+        font-size: 7em;
+    }
+}

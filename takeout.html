@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Take-Out</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="skeleton.css" rel="stylesheet">
+        <link href="takeout-style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Itim&family=Kurale&family=PT+Mono&display=swap" rel="stylesheet">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="main-script.js"></script>
+        <script src="takeout-script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+        
+        
+
+    </head>
+    <body>
+        <div class="header">
+            <span class="menu-icon">
+                <i class="fa fa-bars" style="font-size:30px; color: white; margin:5px"></i>
+            </span>
+            <div class="menu-bar" style="display: flex">
+                <ul class="clear-menu">
+                    <li><a class="button style-button" href="index.html">HOME</a></li>
+                    <li><a class="button style-button" href="aboutUs.html">ABOUT US</a></li>
+                    <li><a class="button style-button" href="menu.html">MENU</a></li>
+                    <li><a class="button style-button" href="reservation.html">RESERVATION</a></li>
+                    <li><a class="button style-button button-primary" href="takeout.html">TAKEOUT</a></li>
+                </ul>
+            </div>
+            <div class="name">
+                <div class="logo-img">
+                    <img class="logo-img" src="img/otagus-removebg.png">
+                </div>
+            </div>
+        </div>
+        <div class="main-order">
+            <h3>TAKE-OUT</h3>
+            <form  class="order-takeout" method="post" action="">
+                <div class="information">
+                    <label>NAME</label>
+                    <input type="text" id="name" name="name"> 
+                    <br>
+                    <label>PHONE</label>
+                    <input type="text" id="phone" name="phone"> 
+                    <br>
+                </div>
+                <label>What type of food would you like?</label>
+                <div class="food-option">
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="nuts" name="nuts">
+                            <label for="nuts">Spcied Nuts - $12</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="nut-quantity" name="quantity" onChange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="nut-price" name="price">   
+                        </div>
+                    </div>
+
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="chips" name="chips">
+                            <label for="chips">Chips & Dip - $11</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="chip-quantity" name="quantity" onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="chip-price" name="price">
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="cakes" name="cakes">
+                            <label for="cakes">Souffle Cakes - $8</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="cake-quantity" name="quantity" onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="cake-price" name="price">
+                        </div>
+                    </div>
+
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="roasts" name="roast">
+                            <label for="cauliflower">Roasted Cauliflower - $11</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="roast-quantity" name="quantity" onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="roast-price" name="price">
+                        </div>
+                    </div>
+
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="truffles" name="truffle">
+                            <label for="truffle">Truffle Fries - $13</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="truffle-quantity" name="quantity" onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="truffle-price" name="price">
+                        </div>
+                    </div>
+
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="tomatoes" name="tomato">
+                            <label for="tomato">Crispy Tomato - $11</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="tomato-quantity" name="quantity"  onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="tomato-price" name="price">
+                        </div>
+                    </div>
+
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="porks" name="pork">
+                            <label for="pork">Pork Pate - $14</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="pork-quantity" name="quantity"  onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="pork-price" name="price">
+                        </div>
+                    </div>
+
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="oysters" name="oyster">
+                            <label for="oyster">Oysters - $28 (1/2 dozen)</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="oyster-quantity" name="quantity"  onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="oyster-price" name="price">
+                        </div>
+                    </div>
+
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="octopi" name="octopus">
+                            <label for="octopus">Octopus - $20</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="octopus-quantity" name="quantity"  onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="octopus-price" name="price">
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 food-row">
+                        <div class="col-7 inline-name">
+                            <input type="checkbox" id="chickens" name="chicken" value="Chickens">
+                            <label for="chicken">Fried Chicken - $15</label>
+                        </div>
+                        <div class="col-2 quantities">
+                            <label>Quantity</label>
+                            <input type="text" id="chicken-quantity" name="quantity"  onchange="onQuantityChange()">
+                        </div>
+                        <div class="col-3 prices">
+                            <label>Price</label>
+                            <input type="text" id="chicken-price" name="price">
+                        </div>
+                    </div>
+                </div>
+                <div class="noted">
+                    <textarea rows="10" cols="50" name="requests" placeholder="Please enter any special requests here"></textarea>
+                </div>
+                <div class="calculate">
+                    <label>SUBTOTAL</label>
+                    <input type="text" id="subtotal">
+
+                    <label>TAX</label>
+                    <input type="text" id="tax">
+            
+                    <label>TOTAL</label>
+                    <input type="text" id="total">
+                </div>
+                <label>PAYMENT METHOD</label>
+                <div class="payment-method">
+                    <div class="payment-detail">
+                        <input type="radio" name="payment" id="paypal">
+                        <label>Paypal</label>
+                    </div>
+                    <div class="payment-detail">
+                        <input type="radio" name="payment" id="card">
+                        <label>Credit Card</label>
+                    </div>
+                </div>
+                <div class="credit-card">
+                    <div class="credit-info">
+                        <div class="credit-item col-6 m-form">
+                            <input type="text" name="cardName" id="cardName" placeholder="Name on Card">
+                        </div>
+                        <div class="credit-item col-6 m-form">
+                            <input type="text" name="cardNumber" id="cardNumber" placeholder="Card Number">
+                       </div>
+                    </div>
+                    <div class="credit-info">
+                        <div class="credit-item col-6 m-form">
+                            <input type="text" name="expiration" id="expiration"  placeholder="Expiration Date">
+                        </div>
+                        <div class="credit-item col-6 m-form">
+                            <input type="text" name="securityCode" id="securityCode"  placeholder="Security Code">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="order-button">
+                    <button>PLACE ORDER</button>
+                </div>
+            </form>
+            
+        </div>
+        <div class="col-12 col-12 mark">&copy; My Phung Tieu</div>
+    </body>
+</html>
+    

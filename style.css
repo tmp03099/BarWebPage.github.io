@@ -1,0 +1,246 @@
+/* reset browser styles */
+* {
+    box-sizing: border-box; 
+  }
+  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+  }
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+  }
+  body {
+      line-height: 1.2;
+  }
+  ol { 
+      padding-left: 1.4em;
+      list-style: decimal;
+  }
+  ul {
+      padding-left: 1.4em;
+      list-style: square;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  } 
+/* end reset browser styles */
+
+
+html{
+    background: black;
+    display: block;
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+}
+
+.name{
+    display: flex;
+    background-image: url("img/background.jpg");
+    background-color: transparent;
+    justify-content: center;
+    height:500px;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    color: white;
+    
+}
+
+.menu-bar{
+    display: flex;
+    justify-content: end;
+    position: inherit;
+    margin: 7px;
+}
+
+.style-button{
+    width: 150px;
+    margin: 5px;
+
+}
+
+h1{
+    font-family: 'Cabin Sketch', cursive;
+}
+
+h2{
+    font-family:'PT Mono', monospace;
+}
+
+h3{
+    font-family: 'Itim', cursive;
+}
+
+p{
+    font-family: 'Kurale', serif;
+}
+
+div .menu-bar ul li{
+    list-style: none;
+    float:left;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.footer{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.social-icon-title {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.social-icon-container{
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.social-icon{
+    padding: 1rem;
+}
+
+.social-icon-container .fb-icon{
+    background: #3B5998;
+    color: white;
+    border-radius: 40px;
+    margin: 0 10px 0 10px;
+    width: 58px;
+    text-align: center;
+}
+
+.social-icon-container .tw-icon{
+    background: #55ACEE;
+    color: white;
+    border-radius: 40px;
+    margin: 0 10px 0 10px;
+    width: 58px;
+    text-align: center;
+}
+
+.social-icon-container .int-icon{
+    background: #f17e20;
+    color: white;
+    border-radius: 40px;
+    margin: 0 10px 0 10px;
+    width: 58px;
+    text-align: center;
+}
+
+.social-icon-container .ytb-icon{
+    background: #bb0000;
+    color: white;
+    border-radius: 40px;
+    margin: 0 10px 0 10px;
+    width: 58px;
+    text-align: center;
+}
+
+.social-icon a{
+    color: inherit;
+}
+
+.social-icon{
+    font-size: 0.75em;
+}
+
+.mark{
+    color:#777777;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/* @media (max-width:549px){
+
+
+    .social-icon{
+        font-size: 0.5em;
+    }
+
+    .social-icon-container .fb-icon{
+      width: 45px;
+    }
+  
+    .social-icon-container .tw-icon{
+      width: 45px;
+    }
+  
+    .social-icon-container .int-icon{
+      width: 45px;
+    }
+  
+    .social-icon-container .ytb-icon{
+      width: 45px;
+   }
+
+   .social-icon-title{
+    font-size: 1.2em;
+    font-weight: 600;
+   }
+
+} */
+
+@media (max-width: 850px){
+
+    .name{
+        height:280px;
+    }
+
+    .logo-img{
+        width: 350px;
+    }
+
+    .footer{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .footer-address {
+        text-align: center;
+    }
+
+    .social-icon-title{
+        text-align: center;
+        border-top: #2e2e2e solid;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 995px){
+
+    .menu-icon{
+        display: block;
+    }
+
+    div .menu-bar{
+        display:none;
+        flex-flow: column;
+        justify-content: end;
+    }
+
+}
+

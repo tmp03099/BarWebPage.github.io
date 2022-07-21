@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reservation</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="skeleton.css" rel="stylesheet">
+        <link href="reservation-style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Itim&family=Kurale&family=PT+Mono&display=swap" rel="stylesheet">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="main-script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <span class="menu-icon">
+                <i class="fa fa-bars" style="font-size:30px; color: white; margin:5px"></i>
+            </span>
+            <div class="menu-bar" style="display: flex">
+                <ul class="clear-menu">
+                    <li><a class="button style-button" href="index.html">HOME</a></li>
+                    <li><a class="button style-button" href="aboutUs.html">ABOUT US</a></li>
+                    <li><a class="button style-button" href="menu.html">MENU</a></li>
+                    <li><a class="button style-button button-primary" href="reservation.html">RESERVATION</a></li>
+                    <li><a class="button style-button" href="takeout.html">TAKEOUT</a></li>
+                </ul>
+            </div>
+            <div class="name">
+                <div class="logo-img">
+                    <img class="logo-img" src="img/otagus-removebg.png">
+                </div>
+            </div>
+        </div>
+        <div class="main-form">
+            <h3>RESERVATION</h3>
+            <form id="reser-form" class="reser-form" method="post" action="">
+                <div class="contact-info">
+                    <input type="text" id="name" name="name" placeholder="Name"> 
+                    <br>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number"> 
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="Email"> 
+                    <br>
+                </div>
+                <div class="number-people">
+                    <select id="people" name="people">
+                        <option value selected disabled>Number of People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7">7 People</option>
+                        <option value="8">8 People</option>
+                        <option value="9">9 People</option>
+                        <option value="10">10+ People</option>
+                    </select>
+                    <br>
+                </div>
+                <div class="date">
+                    <input type="date" id="date" name="date">
+                    <br>
+                </div>
+                <div class="time">
+                    <select id="time" name="time">
+                        <option value selected disabled>Select Time</option>
+                        <option value="5pm">5:00 pm</option>
+                        <option value="6pm">6:00 pm</option>
+                        <option value="7pm">7:00 pm </option>
+                        <option value="8pm">8:00 pm</option>
+                        <option value="9pm">9:00 pm</option>
+                        <option value="10pm">10:00 pm</option>
+                    </select>
+                    <br><br>
+                </div>
+                <div class="submit-button">
+                    <button>SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-12 col-12 mark">&copy; My Phung Tieu</div>
+    </body>
+</html>
+

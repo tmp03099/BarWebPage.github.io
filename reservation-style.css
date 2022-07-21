@@ -1,0 +1,90 @@
+.reser-form{
+    max-width: 100%;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-sizing: inherit;
+    margin-top: 40px;
+}
+
+.main-form h3{
+    text-align: center;
+    margin-top: 40px;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 2em;
+    text-shadow: 2px 3px 2px mediumblue;
+}
+
+input::placeholder{
+    color:black;
+}
+
+.submit-button{
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+button:active{
+    color:aqua;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+}
+    
+label.error {
+    display: inline;
+}
+
+.reser-form input.error, .reser-form select.error{
+    border: 1px solid red;
+}
+
+@media screen and (min-width: 550px){
+
+    .reser-form{
+        width: 900px;
+    }
+    
+    .main-form h3{
+        font-size: 2.8em;
+    }
+}
+
+@media screen and (min-width: 551px){
+
+    .reser-form{
+        width: 450px;
+    }
+    
+}
+
+@media screen and (min-width: 750px){
+
+    .reser-form{
+        width: 650px;
+    }
+    
+    .main-form h3{
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    .reser-form{
+        width: 900px;
+    }
+    
+    .main-form h3{
+        font-size: 4em;
+    }
+}
+    
+    
+
